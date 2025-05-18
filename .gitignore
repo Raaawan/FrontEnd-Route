@@ -1,0 +1,5 @@
+# Ignore the 'solution' folder
+solution/
+
+# Ignore the file 'Table.docs'
+Table.docx
