@@ -1,5 +1,5 @@
-# Ignore the 'solution' folder
 solution/
 
-# Ignore the file 'Table.docs'
 Table.docx
+PersonalData.docx
+HTML_personalData.pdf
