@@ -1,0 +1,297 @@
+/* ----------------------- start all styles ----------------------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Alegreya;
+}
+.clear-fix{
+    clear: both;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+/* ----------------------- end all styles ----------------------- */
+/* ----------------------- start navbar section ----------------------- */
+.navbar{
+    width: 100%;
+    padding: 20px 50px;
+    float: right;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+}
+.navbar .content-left{
+    float: left;
+}
+.navbar .content-left img {
+    width: 150px;
+}
+.navbar .content-right{
+    float: right;
+}
+.navbar .content-right ul li{
+    float: left;
+}
+.navbar .content-right ul li a{
+    padding-inline: 10px;
+    color: black;
+    font-size: 20px;
+}
+/* ----------------------- end navbar section ----------------------- */
+/* ----------------------- start home section ----------------------- */
+.home{
+    background-image: url("../images/drew-coffman-1872.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    padding-block: 100px;
+    text-align: center;
+}
+.home .container{
+    padding-block :100px;
+    margin-block: 100px;
+}
+.home .container span{
+    font-size: 30px;
+    color: white;
+}
+.home .container h1{
+    font-size: 70px;
+    color: white;
+    padding-block: 20px;
+    font-weight: 500;
+}
+.home .container p{
+    font-size: 20px;
+    padding-block: 15px;
+    color: white;
+    font-weight: 100;
+}
+.home .container button{
+    border-color: transparent;
+    padding: 15px;
+    border-radius: 10px;
+    margin-inline: 5px;
+    font-size: 18px;
+    color: white;
+    background-color: transparent;
+}
+.home .container #active{
+    background-color: RGB(142, 119, 84);
+}
+.home .container #border-white{
+    border-color: white;
+}
+.home .container #active:hover,
+.home .container #border-white:hover{
+    background-color: white;
+    color: black;
+}
+/* ----------------------- end home section ----------------------- */
+/* ----------------------- start about section ----------------------- */
+.about{
+    margin-block: 30px;
+}
+.about .image{
+    width: 49%;
+    display: inline-block;    
+    vertical-align: bottom;
+}
+.about .image img{
+    width: 90%;
+}
+.about .about-content{
+    width: 50%;
+    display: inline-block;
+    padding-inline: 10px;
+}
+.about .about-content ul li img{
+    width: 40px;
+    border: 1px solid RGB(140, 119, 85);
+    vertical-align: middle;
+    border-radius: 50%;
+}
+.about .about-content ul li p{
+    display: inline-block;
+    padding-inline: 5px;
+}
+.about .about-content ul,
+.about .about-content ul li{
+    padding-block: 10px;
+}
+/* ----------------------- end about section ----------------------- */
+/* ----------------------- start common styles ----------------------- */
+.about .about-content h2,
+.location .container .location-content h2,
+.information .container h2,
+.contact .container h2{
+    font-size: 40px;
+    font-weight: 500;
+    padding-block: 10px;
+}
+.about .about-content p,
+.location .container .location-content p,
+.information .container p,
+.contact .container p{
+    color: RGB(143, 119, 85);
+    font-size: 18px;
+    padding-inline: 15px;
+}
+.location,.contact{
+    background-color: RGB(248, 248, 248);
+
+}
+/* ----------------------- end common styles ----------------------- */
+/* ----------------------- start location section ----------------------- */
+.location{
+    margin-block: 30px;
+    padding-block: 40px;
+}
+.location .container .location-content{
+    width: 48%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.location .container .image{
+    width: 45%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.location .container .image img{
+    width: 100%;
+}
+.location .container .location-content p{
+    padding-right: 25px;
+    padding-block: 15px;
+    font-size: 18px;
+}
+/* ----------------------- end location section ----------------------- */
+/* ----------------------- start information section ----------------------- */
+.information{
+    text-align: center;
+    margin-block: 30px;
+}
+.information .container .item{
+    width: 32%;
+    float: left;
+    padding-block: 30px;
+}
+.information .container .item img{
+    width: 90%;
+}
+.information .container .item h3{
+    font-size: 25px;
+    font-weight: 400;
+    padding-block: 10px;
+}
+/* ----------------------- end information section ----------------------- */
+/* ----------------------- start contact section ----------------------- */
+.contact{
+    margin-block: 30px;
+    padding-block: 50px;
+}
+.contact .container .contact-content,
+.contact .container .image{
+    width: 49%;
+    float: left;
+}
+.contact .container .contact-content p{
+    padding-bottom: 15px;
+    padding-right: 20px;
+}
+.contact .container .contact-content ul li img{
+    width: 40px;
+    border: 1px solid RGB(140, 119, 85);
+    vertical-align: middle;
+    border-radius: 50%;
+    background-color:RGB(142, 119, 84);
+
+}
+.contact .container .contact-content ul li p{
+    display: inline-block;
+    padding-inline: 5px;
+}
+.contact .container .image img{
+    width: 90%;
+}
+/* ----------------------- end contact section ----------------------- */
+/* ----------------------- start blog section ----------------------- */
+.blog{
+    margin-top: 30px;
+    padding-block: 50px;
+    background-color: RGB(64, 61, 56);
+}
+.blog .container .item{
+    width: calc(100%/4);
+    float: left;
+    padding-right: 15px;
+    color: RGB(148, 148, 147);
+    padding-block: 5px;
+}
+.blog .container .item h4{
+    font-size: 20px;
+    font-weight: 400;
+    padding-block: 10px;
+    color: white;
+}
+.blog .container .item p{
+    word-spacing: .6px;
+    padding-block: 5px;
+}
+.blog .container .special ul li{
+    border-bottom: 1px solid RGB(68, 65, 60);
+    padding-block: 8px;
+    padding-inline: 5px;
+}
+.blog .container span{
+    padding-right: 10px;
+}
+.blog .container img{
+    width: 30px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.blog .container .background-image{
+    background-image: url(../images/contact-details-map.png);
+    background-size: contain;
+}
+.blog .container a{
+    color: RGB(148, 148, 147);
+}
+/* ----------------------- end blog section ----------------------- */
+/* ----------------------- start footer section ----------------------- */
+.footer{
+    padding-block: 50px;
+    background-color: RGB(68, 65, 60);
+    text-align: center;
+}
+.footer p{
+    color: #777;
+    padding-block: 15px;
+}
+.footer .icons{
+    width: 15%;
+    margin: 10px auto;
+}
+.footer .icons .icon{
+    width: calc(100%/4);
+    float: left;
+}
+.footer .icons .icon img{
+    width: 50px;
+    border: 1px solid #777;
+    border-radius: 50%;
+    background-color: #777;
+}
+/* ----------------------- end footer section ----------------------- */
