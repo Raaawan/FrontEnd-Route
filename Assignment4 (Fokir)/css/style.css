@@ -1,0 +1,756 @@
+/* -------------------------- start global style -------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+}
+
+.clear-fix {
+  clear: both;
+}
+
+.container {
+  width: 75%;
+  margin: 0 auto;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* -------------------------- end global style -------------------------- */
+/* -------------------------- start header style -------------------------- */
+.header {
+  height: 100vh;
+  background-image: url(../images/hero\ img.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+
+.header .layer {
+  background-color: rgba(0, 0, 0, 0.495);
+  height: 100vh;
+}
+
+.header .layer .navbar {
+  padding-block: 20px;
+  width: 100%;
+  position: fixed;
+  z-index: 5;
+}
+
+.header .layer .navbar a {
+  float: left;
+  text-decoration: none;
+  color: #ff305b;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.header .layer .navbar .navbar-links {
+  float: right;
+}
+
+.header .layer .navbar .navbar-links ul li {
+  float: left;
+}
+
+.header .layer .navbar .navbar-links ul li a {
+  color: white;
+  padding: 10px;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.header .layer .navbar .navbar-links ul li #active {
+  color: #ff305b;
+}
+
+.header .layer .navbar .navbar-links ul li a:hover {
+  color: #ff305b;
+}
+
+.header .header-data {
+  position: relative;
+  top: 50vh;
+  color: white;
+  text-align: center;
+}
+
+.header .header-data .title {
+  font-size: 24px;
+}
+
+.header .header-data h1 {
+  padding-block: 20px;
+  color: #ff305b;
+  font-size: 70px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.header .header-data p {
+  font-size: 26px;
+  font-weight: 300;
+}
+
+.header .header-data p::after {
+  content: "";
+  animation: animationHeader 5s infinite alternate;
+}
+
+@keyframes animationHeader {
+  0% {
+    content: "|";
+  }
+
+  5% {
+    content: "|d";
+  }
+
+  10% {
+    content: "|de";
+  }
+
+  15% {
+    content: "|dev";
+  }
+
+  20% {
+    content: "|devl";
+  }
+
+  25% {
+    content: "|devlo";
+  }
+
+  30% {
+    content: "|devlop";
+  }
+
+  35% {
+    content: "|devlope";
+  }
+
+  40% {
+    content: "|devloper";
+  }
+
+  45% {
+    content: "|devlope";
+  }
+
+  50% {
+    content: "|devlop";
+  }
+
+  55% {
+    content: "|devlo";
+  }
+
+  60% {
+    content: "|devl";
+  }
+
+  65% {
+    content: "|dev";
+  }
+
+  70% {
+    content: "|de";
+  }
+
+  75% {
+    content: "|de";
+  }
+
+  80% {
+    content: "|d";
+  }
+
+  85% {
+    content: "|";
+  }
+
+  90% {
+    content: "";
+  }
+}
+
+/* -------------------------- end header style -------------------------- */
+/* -------------------------- start about style -------------------------- */
+.about {
+  padding-block: 40px;
+  margin-block: 40px;
+}
+
+.about .container {
+  margin-block: 25px;
+}
+
+.about .container .image-container {
+  position: relative;
+  width: 32%;
+  float: left;
+  margin-left: 40px;
+}
+
+.about .container img {
+  display: block;
+  width: 100%;
+  position: relative;
+  z-index: 5;
+  border-radius: 5px;
+}
+
+.about .container .image-container .about-image .image::after {
+  content: "";
+  width: 100%;
+  height: 95%;
+  background-color: transparent;
+  position: absolute;
+  bottom: 45px;
+  right: 30px;
+  border: 7px solid #555555;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.about .container .image-container .about-image .image {
+  position: relative;
+  width: 100%;
+}
+
+.about .container .image-container .about-image .about-layer {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: 0.5s;
+  z-index: 10;
+  transform: translateY(100%);
+  transition: transform 0.5s linear;
+  display: none;
+}
+
+.about .container .image-container .about-image:hover .about-layer {
+  display: block;
+  transform: translateY(0);
+}
+
+.about .container .image-container .about-image .about-layer .icons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  overflow: hidden;
+}
+
+.about .container .image-container .about-image .about-layer .icons li {
+  float: left;
+  padding-inline: 10px;
+}
+
+.about .container .image-container .about-image .about-layer .icons li a {
+  color: white;
+  font-size: 18px;
+  transition: color s;
+}
+
+.about .container .image-container .about-image .about-layer .icons li a:hover {
+  color: #ff305b;
+}
+
+.about .container .about-data {
+  width: 60%;
+  float: right;
+  padding-left: 20px;
+}
+
+.about .container .about-data .about-header {
+  font-size: 25px;
+  line-height: 22px;
+  margin-bottom: 25px;
+  padding-left: 13px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.about .container .about-data .about-header::before {
+  content: "";
+  background-color: #ff305b;
+  width: 5px;
+  height: 28px;
+  position: absolute;
+  left: -5px;
+  bottom: -3px;
+}
+
+.about .container .about-data .about-description p {
+  border-bottom: 1px dashed #999999;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  color: #555555;
+  width: 90%;
+  line-height: 25px;
+}
+
+.about .container .about-data .about-lists li {
+  float: left;
+  width: 49%;
+  line-height: 30px;
+  color: #555555;
+}
+
+.about .container .about-data .about-lists li a {
+  color: #555555;
+}
+
+.about .container .about-data .about-lists li span {
+  color: black;
+  font-weight: 500;
+}
+
+.about .container .about-data .about-buttons {
+  margin-block: 30px;
+}
+
+.about .container .about-data .about-buttons a {
+  padding-inline: 20px;
+  padding-block: 15px;
+  background-color: #ff305b;
+  color: white;
+  margin-right: 10px;
+  border-radius: 5px;
+  transition: background-color 0.5s;
+}
+
+.about .container .about-data .about-buttons a:hover {
+  background-color: #ec2403;
+}
+
+/* -------------------------- end about style -------------------------- */
+/* -------------------------- start services style -------------------------- */
+.services {
+  padding-block: 40px;
+  margin-block: 40px;
+  background-color: #f1f1f1;
+}
+
+.container .special-title {
+  position: relative;
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 40px;
+  padding-top: 30px;
+  color: #333333;
+  text-align: center;
+}
+
+.special-title::before {
+  content: "";
+  position: absolute;
+  height: 10px;
+  border-color: #ff305b;
+  border-style: solid;
+  border-width: 1px 0;
+  padding: 5px 0 5px;
+  width: 95px;
+  top: 100px;
+  left: 530px;
+}
+
+.special-title::after {
+  content: "";
+  position: absolute;
+  height: 0;
+  border-color: #ff305b8a;
+  border-style: solid;
+  border-width: 1px 0px;
+  padding: 0px;
+  width: 235px;
+  top: 110px;
+  left: 465px;
+}
+
+.services .container .services-description {
+  text-align: center;
+}
+
+.services .container .services-description .card {
+  width: 22%;
+  float: left;
+  padding-inline: 15px;
+  padding-block: 30px;
+  margin-block: 20px;
+  transition: baclground-color 1s 0.5;
+}
+
+.services .container .services-description .card i {
+  color: #ff305b;
+  display: block;
+  margin-bottom: 20px;
+  font-size: 36px;
+  transition: transform 0.5s;
+}
+
+.services .container .services-description .card h3 {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 17px;
+  color: #333333;
+}
+
+.services .container .services-description .card p {
+  line-height: 25px;
+  color: #665b58;
+}
+
+.services .container .services-description .card:hover {
+  background-color: #fff;
+}
+
+.services .container .services-description .card:hover i {
+  transform: scale(1.2);
+}
+
+/* -------------------------- end services style -------------------------- */
+/* -------------------------- start portofolio style -------------------------- */
+.portfolio .container .portfolio-navbar {
+  text-align: center;
+}
+.portfolio .container .portfolio-navbar .container {
+  padding-block: 40px;
+}
+.portfolio .container .portfolio-navbar .container a {
+  color: #333333;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 5px 30px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  margin-top: 100px;
+}
+.portfolio .container .portfolio-navbar .container #special-link {
+  color: #ff305b;
+}
+.portfolio .container .portofoli-gallery {
+  position: relative;
+  overflow: hidden;
+}
+.portfolio .container .portofoli-gallery .card {
+  width: 32%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+}
+.portfolio .container .portofoli-gallery .card .card-image img {
+  width: 95%;
+}
+.portfolio .container .portofoli-gallery .card .overlay {
+  background: rgba(0, 0, 0, 0.533);
+  position: absolute;
+  left: 0;
+  top: 0.1px;
+  width: 95%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s;
+  z-index: 10;
+}
+.portfolio .container .portofoli-gallery .card .overlay .icon {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  font-size: 18px;
+  transition: color 1s;
+}
+.portfolio .container .portofoli-gallery .card:hover .overlay {
+  opacity: 1;
+}
+.portfolio .container .portofoli-gallery .card:hover .icon {
+  color: #ff305b;
+}
+/* -------------------------- end portofolio style -------------------------- */
+/* -------------------------- start data style -------------------------- */
+.data {
+  margin-block: 30px;
+  padding-block: 30px;
+  background-color: #f1f1f1;
+  padding-block: 40px;
+}
+.data .container .card {
+  width: 25%;
+  float: left;
+  text-align: center;
+  padding-block: 40px;
+}
+.data .container .card .icon {
+  color: #ff305b;
+  font-size: 26px;
+  padding-block: 10px;
+}
+.data .container .card h3 {
+  font-size: 24px;
+  font-weight: 800;
+  padding-block: 10px;
+  color: #33333f;
+}
+.data .container .card p {
+  padding-block: 10px;
+  color: #33333f;
+}
+/* -------------------------- end data style -------------------------- */
+/* -------------------------- start testimonial style -------------------------- */
+.testimonial {
+  margin-block: 20px;
+}
+.testimonial .special-title {
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+}
+.testimonial .container .testimonial-card {
+  background: #f1f1f1;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 40px;
+  position: relative;
+  width: 70%;
+  margin-top: 40px;
+  margin-inline: auto;
+}
+.testimonial .container .testimonial-card::after {
+  border-color: #ff305b;
+  border-style: solid;
+  border-width: 150px;
+  content: "";
+  height: 0px;
+  left: -260px;
+  position: absolute;
+  top: -180px;
+  width: 77px;
+  transform: rotate(46deg);
+}
+.testimonial .container .testimonial-card .image img {
+  border-radius: 50%;
+  float: left;
+  margin: 0px auto;
+  overflow: hidden;
+  position: relative;
+  width: 100px;
+  z-index: 999;
+  height: 100px;
+}
+.testimonial .container .testimonial-card .testimonial-card-des {
+  float: left;
+  width: 70%;
+  padding-left: 35px;
+  margin-left: 25px;
+}
+.testimonial .container .testimonial-card .testimonial-card-des h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.testimonial .container .testimonial-card .testimonial-card-des .location {
+  color: #777777;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.testimonial .container .testimonial-card .testimonial-card-des .location a {
+  color: #777777;
+  font-size: 15px;
+  text-decoration: none;
+}
+.testimonial .container .testimonial-card .testimonial-card-des .des p {
+  font-size: 16px;
+  font-style: italic;
+  color: #777777;
+  line-height: 25px;
+  padding: 10px;
+}
+.testimonial .container .testimonial-card .testimonial-card-des .rate {
+  color: #f1c30d;
+}
+.testimonial .container .dots {
+  width: 10%;
+  margin: 25px auto;
+}
+.testimonial .container .dots .small-dot {
+  width: 10px;
+  height: 7px;
+  background-color: white;
+  border: 1px solid #ff305b;
+  float: left;
+  border-radius: 30px;
+}
+.testimonial .container .dots .big-dot {
+  width: 21px;
+  height: 7px;
+  background-color: #ff305b;
+  border-radius: 30px;
+  margin-left: 25px;
+}
+/* -------------------------- end testimonial style -------------------------- */
+/* -------------------------- start blog style -------------------------- */
+.blog {
+  padding-block: 20px;
+  background-color: #f1f1f1;
+}
+.blog .container .blog-description {
+  padding: 40px 15px;
+}
+.blog .container .blog-description .card {
+  margin-top: 35px;
+  width: 31%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  background: #ffffff;
+  margin-left: 15px;
+}
+.blog .container .blog-description .card .card-image img {
+  width: 100%;
+}
+.blog .container .blog-description .card .card-image video {
+  width: 100%;
+  height: 190px;
+}
+.blog .container .blog-description .card .card-des {
+  padding: 20px;
+}
+.blog .container .blog-description .card .card-des .card-des-title span {
+  color: #5e6467;
+  margin-bottom: 10px;
+  display: block;
+}
+.blog .container .blog-description .card .card-des .card-des-title h3 a {
+  text-decoration: none;
+  display: block;
+  color: #38393b;
+  margin-bottom: 10px;
+  font-size: 22px;
+  transition: color 1s;
+}
+.blog .container .blog-description .card .card-des .card-des-title h3 a:hover {
+  color: #ff305b;
+}
+.blog .container .blog-description .card .card-des .card-des-content {
+  color: #5e6467;
+  margin-bottom: 10px;
+  display: block;
+  line-height: 25px;
+  margin-bottom: 10px;
+}
+.blog .container .blog-description .card .card-des .card-des-button a {
+  color: #333333;
+  transition: color 1s;
+}
+.blog .container .blog-description .card .card-des .card-des-button a:hover {
+  color: #ff305b;
+}
+/* -------------------------- end blog style -------------------------- */
+/* -------------------------- start contact style -------------------------- */
+.contact {
+  padding-block: 20px;
+}
+.contact .container .form {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+.contact .container .form form input {
+  border-color: #efefdf;
+  border-radius: 4px;
+  margin: 15px;
+  width: 400px;
+  height: 40px;
+  padding-inline: 5px;
+}
+.contact .container .form form #subject {
+  width: 93.5%;
+}
+.contact .container .form form textarea {
+  width: 93%;
+  height: 100px;
+  padding: 10px;
+  border-color: #efefdf;
+  border-radius: 4px;
+  resize: both;
+  margin-left: 15px;
+}
+.contact .container .form form button {
+  background-color: #ff305b;
+  color: #fff;
+  border: none;
+  padding: 18px;
+  display: block;
+  margin-left: 20px;
+  margin-top: 10px;
+  border-radius: 4px;
+}
+.contact .container .form form button:hover {
+  background-color: #ec2403;
+  border-color: #ff305b;
+}
+/* -------------------------- end contact style -------------------------- */
+/* -------------------------- start footer style -------------------------- */
+
+
+/* footer section  */
+.footer{
+    overflow: auto;
+    background-color: #333333;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    overflow: auto;
+    position: relative;
+}
+.footer .container{
+    text-align: center;
+    
+}
+.footer .container .footer-icons{
+    position: relative;
+}
+.footer .container .footer-icons .icons{
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.footer .container .footer-icons .icons ul{
+    list-style: none;
+}
+.footer .container .footer-icons .icons ul li{
+    float: left;
+}
+.footer .container .footer-icons .icons ul li a i{
+    float: left;
+    color: white;
+    margin-left: 20px;
+    transition: color 1s ease-in-out;
+
+}
+.footer .container .footer-icons .icons ul li a i:hover{
+    color: #ff305b;
+
+}
+
+.footer .container .footer-description{
+    margin-top: 40px;
+    padding-top: 40px;
+    color: #FFF;
+}
+.footer .container .footer-description a{
+    text-decoration: none;
+    color: #ff305b;
+}
+/* -------------------------- end footer style -------------------------- */
